@@ -1,12 +1,12 @@
 {
   "name": "gulp-sri",
-  "description": "SRI integrety hash generator for gulp. Based on gulp-buster.",
+  "description": "SRI integrety hash generator for gulp. Forked from Matt Conlen's version",
   "version": "0.3.1",
   "author": {
-    "name": "Matthew Conlen",
-    "email": "code@mathisonian.com"
+    "name": "Eli Robinson",
+    "email": "eli.robinson@sproutsocial.com"
   },
-  "main": "./index.js",
+  "main": "main.js",
   "keywords": [
     "gulpplugin",
     "sri",
@@ -22,31 +22,27 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mathisonian/gulp-sri.git"
+    "url": "https://github.com/EliRobinson/gulp-sri.git"
   },
   "dependencies": {
-    "bluebird": "^2.3.2",
-    "gulp-util": "^3.0.1",
-    "lodash.defaults": "^2.4.1",
-    "object-assign": "^1.0.0",
-    "sri-toolbox": "0.2.0",
-    "through": "^2.3.4"
+    "lodash": "^4.17.15",
+    "plugin-error": "^1.0.1",
+    "sri-toolbox": "^0.2.0",
+    "through": "^2.3.4",
+    "vinyl": "^2.2.0"
   },
   "engines": {
     "node": ">= 0.10"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mathisonian/gulp-sri/issues"
+    "url": "https://github.com/EliRobinson/gulp-sri/issues"
   },
   "devDependencies": {
-    "istanbul": "^0.3.2",
-    "mocha": "^2.0.0",
-    "should": "^4.0"
+    "jest": "^26.0.1"
   },
   "scripts": {
-    "test": "mocha",
-    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- -R dot",
-    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly"
+    "test": "jest",
+    "test-cov": "jest --collectCoverage"
   }
 }
