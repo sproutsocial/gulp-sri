@@ -1,5 +1,5 @@
 {
-  "name": "gulp-sri",
+  "name": "@sproutsocial/gulp-sri",
   "description": "SRI integrety hash generator for gulp. Forked from Matt Conlen's version: https://github.com/mathisonian/gulp-sri",
   "version": "0.4.0",
   "author": {
